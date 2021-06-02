@@ -37,3 +37,8 @@ try{
         }
     }
 }
+catch(Exception err){
+    echo "Exception occured..."
+    currentBuild.result="FAILURE"
+    //send an failure email notification to the user.
+}
